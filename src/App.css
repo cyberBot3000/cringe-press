@@ -1,0 +1,10 @@
+:root{
+    --color-text-main: black;
+    --font-family-text-main: Arial, sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
