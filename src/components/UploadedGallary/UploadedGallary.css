@@ -1,0 +1,30 @@
+.uploaded-gallery{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+}
+.uploaded-gallery__files-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+.uploaded-gallery__file-elem{
+    width: 200px;
+    height: 200px;
+}
+.uploaded-gallery__input_hidden{
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+}
+.uploaded-gallery__add-files{
+    background-color: lightskyblue;
+    padding: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+}
