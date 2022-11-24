@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import DragAndDrop from "../UI/DragAndDrop/DragAndDrop";
 import UploadedGallary from "../UploadedGallary/UploadedGallary";
 
-const SelectImages = ({ uploadedFiles, setUploadedFiles }) => {
+const SelectImages = ({ uploadedFiles, setUploadedFiles, className}) => {
 	const [fileId, setFileId] = useState(0);
 	function increaseFileId() {
 		setFileId(currentId => {
@@ -38,7 +38,7 @@ const SelectImages = ({ uploadedFiles, setUploadedFiles }) => {
 	}
 
 	return (
-		<div className="image-field">
+		<div className={`image-field ${className}`}>
 			{uploadedFiles.length != 0 ? (
 				<UploadedGallary
 					addFiles={addFiles}
@@ -47,7 +47,7 @@ const SelectImages = ({ uploadedFiles, setUploadedFiles }) => {
 				/>
 			) : (
 				<DragAndDrop
-					dragText={"перетащите файлы"}
+					dragText={"перетащите файлы сюда"}
 					dropText={"отпустите файлы"}
 					onDrop={onDrop}
 				/>
