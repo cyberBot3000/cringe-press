@@ -1,10 +1,31 @@
 :root{
     --color-text-main: black;
+    --color-text-light: #b2b2b2;
     --font-family-text-main: Arial, sans-serif;
+    --color-bg-default: #f9f9f9;
+    --color-bg-main: white;
+    --color-main: #00A876;
+    --color-accent: #FF9A00;
+
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.button{
+    outline: none;
+    border-radius: 0;
+    border: none;
+    color: inherit;
+}
+.App{
+    background-color: var(--color-bg-default);
+    font-family: var(--font-family-text-main);
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }

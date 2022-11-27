@@ -1,0 +1,15 @@
+.col{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.col-2-1 > *:nth-child(1){
+    width: 66.6%;
+
+}
+.col-2-1 > *:nth-child(2){
+   width: 33.3%;
+}
+.home-page{
+    margin-top: 20px;
+}
